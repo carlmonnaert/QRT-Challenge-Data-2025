@@ -85,4 +85,4 @@ The models are evaluated using the **Concordance Index (C-Index)** via Interval-
 
 ## 📜 License
 
-This project is under [MIT](license.txt) license
+This project is under [MIT](MIT.txt) license
