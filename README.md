@@ -45,14 +45,15 @@ The project compares several survival analysis techniques using `scikit-survival
 
 ```text
 .
-├── data/                       # Dataset folder
-│   ├── X_train/                # Training clinical & molecular files
-│   ├── X_test/                 # Test clinical & molecular files
-│   └── target_train.csv        # Survival labels (OS_YEARS, OS_STATUS)
-├── submission/                 # Output folder for prediction CSVs
-├── parsing.py                  # Core logic for ISCN and molecular string parsing
-├── cox_penalized.ipynb         # Workflow for CoxNet model training & validation
-└── random_survival_forest.ipynb # Workflow for RSF, GBSA, and Ensemble generation
+├── data/                        # Dataset folder
+│   ├── X_train/                 # Training clinical & molecular files
+│   ├── X_test/                  # Test clinical & molecular files
+│   └── target_train.csv         # Survival labels (OS_YEARS, OS_STATUS)
+├── submission/                  # Output folder for prediction CSVs
+├── parsing.py                   # Core logic for ISCN and molecular string parsing
+├── cox_penalized.ipynb          # Workflow for CoxNet model training & validation
+├── random_survival_forest.ipynb # Workflow for RSF, GBSA, and Ensemble generation
+└── filtering.ipynb              # Workflow for RSF and GBSA with CoxNet features filtering
 ```
 
 ## 🛠️ Setup & Usage
