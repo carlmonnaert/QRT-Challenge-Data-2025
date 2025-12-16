@@ -82,7 +82,7 @@ The models are evaluated using the **Concordance Index (C-Index)** via Interval-
   * **Cox Penalized:** \~73.4%. (Validation)
   * **Random Survival Forest:** \~76.1%+ (Validation)
   * **Gradient Boosting Survival** \~74.4%+ (Validation)
-  * **Ensemble Strategy:** Combines the strengths of RSF and GBSA for optimal generalization on the test set.
+  * **Ensemble Strategy:** \~75.6%+Combines the strengths of RSF and GBSA for optimal generalization on the test set.
 
 ## 📜 License
 
