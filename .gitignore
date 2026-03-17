@@ -1,2 +1,5 @@
-submission
-data
+submission/
+data/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
