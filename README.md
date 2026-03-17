@@ -45,14 +45,15 @@ The project compares several survival analysis techniques using `scikit-survival
 
 ```text
 .
-├── data/                       # Dataset folder
-│   ├── X_train/                # Training clinical & molecular files
-│   ├── X_test/                 # Test clinical & molecular files
-│   └── target_train.csv        # Survival labels (OS_YEARS, OS_STATUS)
-├── submission/                 # Output folder for prediction CSVs
-├── parsing.py                  # Core logic for ISCN and molecular string parsing
-├── cox_penalized.ipynb         # Workflow for CoxNet model training & validation
-└── random_survival_forest.ipynb # Workflow for RSF, GBSA, and Ensemble generation
+├── data/                        # Dataset folder
+│   ├── X_train/                 # Training clinical & molecular files
+│   ├── X_test/                  # Test clinical & molecular files
+│   └── target_train.csv         # Survival labels (OS_YEARS, OS_STATUS)
+├── submission/                  # Output folder for prediction CSVs
+├── parsing.py                   # Core logic for ISCN and molecular string parsing
+├── cox_penalized.ipynb          # Workflow for CoxNet model training & validation
+├── random_survival_forest.ipynb # Workflow for RSF, GBSA, and Ensemble generation
+└── filtering.ipynb              # Workflow for RSF and GBSA with CoxNet features filtering
 ```
 
 ## 🛠️ Setup & Usage
@@ -81,7 +82,7 @@ The models are evaluated using the **Concordance Index (C-Index)** via Interval-
   * **Cox Penalized:** \~73.4%. (Validation)
   * **Random Survival Forest:** \~76.1%+ (Validation)
   * **Gradient Boosting Survival** \~74.4%+ (Validation)
-  * **Ensemble Strategy:** Combines the strengths of RSF and GBSA for optimal generalization on the test set.
+  * **Ensemble Strategy:** \~75.6%+Combines the strengths of RSF and GBSA for optimal generalization on the test set.
 
 ## 📜 License
 
